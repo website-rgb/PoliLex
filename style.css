@@ -40,9 +40,8 @@ hr.SeitenleisteTrennSchwarz {
 
 h1.Willkommen {
   color: white;
-  margin-left: 1rem;
-  font-size: clamp(20px, 4vw, 100px);
   margin-left: 8.75rem;
+  font-size: clamp(20px, 4vw, 100px);
   animation-name: txt1;
   animation-duration: 1s;
 }
@@ -79,7 +78,7 @@ button.KapitalismusButton {
   color: white;
   width: fit-content;
   padding: 0.3125rem;
-  margin-left: 140px;
+  margin-left: 8.75rem;
   border-radius: 50px;
   animation-name: txt1;
   animation-duration: 1s;
@@ -91,7 +90,6 @@ button.KapitalismusButton {
 button.KapitalismusButton:hover {
   color: rgb(192, 192, 192);
   border: 1px rgb(192, 192, 192) solid;
-  font-size: clamp(15px, 1vw, 1000px);
 }
 
 .Video1 {
@@ -135,7 +133,6 @@ button.Home {
   background: none;
   border: 0.0625rem black solid;
   border-radius: 50px;
-  font-size: clamp(10px, 1.3vw, 1000px);
   cursor: pointer;
   transition: 0.1s;
   font-size: clamp(15px, 1vw, 1000px);
@@ -144,7 +141,6 @@ button.Home {
 button.Home:hover {
   color: rgb(75, 75, 75);
   border: 0.0625rem rgb(75, 75, 75) solid;
-  font-size: clamp(15px, 1vw, 1000px);
 }
 
 p.Text2 {
@@ -156,6 +152,8 @@ p.Text2 {
   animation-duration: 1s;
   white-space: pre-line;
 }
+
+/* Animationen */
 
 @keyframes Seitenleiste {
   0% {
@@ -174,5 +172,20 @@ p.Text2 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1.Willkommen,
+  p.WillkommenDetails,
+  hr.trenn1,
+  h1.Überschrift1,
+  button.KapitalismusButton,
+  .Video1,
+  p.fortsetzung,
+  h1.Überschrift2,
+  p.Text1,
+  p.Text2 {
+    margin-left: 5rem;
   }
 }
